@@ -18,8 +18,8 @@ This project implements a simple e-commerce system with the following modules:
 Open:
 - App UI: `http://localhost:8082/`
   - JDBC URL: `jdbc:h2:mem:ecommerce`
-  - User: `saivarun`
-  - Password: `password`
+  - User: `*****`
+  - Password: `*****`
 
 ## API Overview
 
@@ -54,7 +54,7 @@ Open:
 ## Authentication Notes
 - Login/Register returns a token.
 - Public registration always creates a `USER` account (no admin self-registration).
-- A default admin is auto-created on startup: `admin@shop.com` / `admin123`.
+- A default admin is auto-created on startup: `admin@gmail.com` / `admin123`.
 - Demo products are auto-seeded on first startup so the homepage has featured items.
 - For protected APIs, set header: `Authorization: Bearer <token>`.
 - This is a demo token system (in-memory) and uses plain-text passwords. Use Spring Security + hashed passwords for production.
